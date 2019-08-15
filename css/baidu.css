@@ -1,0 +1,332 @@
+html,body {
+    font: 13px arial;
+    height:100%;
+    margin:0;
+}
+
+.wrapper
+{
+    position: relative;
+    min-width: 810px;
+    min-height:600px;
+    height:100%;
+}
+
+/*头部*/
+header {
+	padding-top:10px;
+    overflow: hidden;
+    font-weight:bold;
+    color:#000;
+}
+
+header nav {
+    width: 480px;
+    float: right;
+    padding-right: 18px;
+}
+
+header nav a {
+    margin-left: 18px;
+    color:#333;
+    font-weight:bold;
+    line-height:24px;
+    font-size:13px;
+}
+
+header nav a:hover
+{
+	color:#00c;
+}
+
+header button {
+    position:absolute;
+    right:5px;
+    width:70px;
+    height:25px;
+    margin-bottom:-2px;
+    margin-left: 30px;
+    font-size:13px;
+    text-align: center;
+    border:0px;
+    color: #fff;
+    background-color: #38f;
+}
+
+
+/*下拉菜单*/
+
+.configset
+{
+    display: inline-block;
+    position:absolute;
+    width:46px;
+    height:24px;
+    right:100px;
+}
+
+.configsub a
+{
+    text-decoration: none;
+    margin:0 auto;
+    width:100%;
+    display: inline-block;
+}
+
+.configsub a:hover
+{
+    color:#fff;
+    background-color: #38f;
+}
+.configsub
+{
+    position:absolute;
+    width:70px;
+    top:25px;
+    left:-8px;
+    border:1px solid #ddd;
+    box-shadow: 1px 1px 5px #ddd;
+    z-index: 99;
+    text-align: center;
+    display: none;
+}
+
+.configset:hover .configsub
+{
+    display: block;
+}
+.configsub .triangle{
+    top:-11px;
+    left:30px;
+    width:0;
+    height:0;
+    display:block;
+    position:absolute;
+    border:5px solid transparent;
+    border-style:dashed dashed solid dashed;
+    border-bottom-color:#d8d8d8;
+}
+
+.configsub .triangle:after{
+    content:"";
+    top:-4px;
+    left:-5px;
+    width:0;
+    height:0;
+    display:block;
+    position:absolute;
+    border:5px solid transparent;
+    border-style:dashed dashed solid dashed;
+    border-bottom-color:#fff;
+}
+
+
+.more-products
+{
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:80px;
+    min-height:600px;
+    border-left:1px solid #ddd;
+    background-color:#f9f9f9;
+    display: block;
+    z-index:999;
+}
+
+.more-products ul
+{
+    list-style: none;
+    padding:0 5px;
+    text-align:center;
+}
+
+.more-products li{
+
+ position: relative;
+ height:70px;
+ border-bottom:1px solid #ddd;
+
+
+}
+.more-products a{
+    color:#333;
+    text-decoration: none;
+}
+
+.more-products a:hover
+{
+    text-decoration: underline;
+}
+
+.more-products span
+
+{
+    display: block;
+width:36px;
+height:36px;
+margin:0 auto;
+margin-top:15px;
+margin-bottom:5px;
+background:url(../img/bd_icons.png)0 0 no-repeat;
+}
+.more-products .icon0{
+background-position: 0 0;
+}
+
+.more-products .icon1{
+background-position: -36px 0;
+}
+
+.more-products .icon2{
+background-position: -72px 0;
+}
+.more-products .icon3{
+background-position: -112px 0;
+}
+.more-products .icon4{
+background-position: -146px 0;
+}
+
+.more-products .icon5{
+background-position: -182px 0;
+}
+.more-products .moretitle
+{
+    height: 25px;
+}
+
+.more-products .more-end
+{
+    margin-top:15px;
+    border:none;
+}
+
+/*主体*/
+
+.content {
+	padding-top:75px;
+    text-align: center;
+
+}
+
+.content img {
+    width: 270px;
+    height: 129px;
+    margin-bottom: 10px;
+}
+
+
+.content input {
+	border-style: solid;
+	border-color: #b8b8b8;
+	border-width: 1px;
+    width: 520px;
+    height: 35px;
+    padding:0;
+    vertical-align: top;
+
+}
+
+.content input:hover{
+
+    border-color: #999;
+}
+
+
+.content input:focus {
+    border-color: #3385ff;
+    outline:none;
+}
+.content button {
+    font: 16px arial;
+    color: #fff;
+    background-color: #307cff;
+    border:0;
+    width: 100px;
+    height: 37px;
+    margin-left:-5px;
+    cursor:pointer;
+    padding:0;
+}
+
+.content button:hover {
+
+    background-color: #3171f7;
+
+}
+
+.content form
+{
+    position: relative;
+}
+.content .mic
+{
+    height:34px;
+    width:34px;
+    display:inline-block;
+    position:absolute;
+    top:10px;
+    right:140px;
+    background:url(../img/mic.png) no-repeat;
+    cursor:pointer;
+
+}
+
+.content .mic:hover
+{
+    background:url(../img/mic-hover.png) no-repeat;
+
+}
+
+.content .mic:after {
+    content: "";
+    display: inline-block;
+    height: 14px;
+    width: 0;
+    border-left: 1px solid #e7e7e7;
+    margin: 4px 2px 4px 15px;
+}
+
+.content .pic
+{
+    height:20px;
+    width:30px;
+    display:inline-block;
+    position:absolute;
+    top:7px;
+    right:110px;
+    background:url(../img/camera.png) 0 4px no-repeat;
+    cursor:pointer;
+
+}
+
+.content .pic:hover
+{
+    background:url(../img/camera.png) 0 -16px no-repeat;
+
+}
+.content .inputbox
+{
+
+    height:191px;
+    width:650px;
+    margin:0 auto;
+}
+/*底部*/
+
+footer { 
+	font:10px arial;
+    color: #999;
+    text-align: center;
+    margin:0 auto;
+    bottom:47px;
+    width:100%;
+    position:absolute;
+    height:50px;
+    }
+
+footer a {
+    color: #999;
+}
